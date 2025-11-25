@@ -503,4 +503,9 @@ const WINDOW_CONFIG = {
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
 
+export const FONT_WEIGHTS = {
+  subtitle: { min: 100, max: 400, default: 100 },
+  title: { min: 400, max: 900, default: 400 }
+};
+
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };
