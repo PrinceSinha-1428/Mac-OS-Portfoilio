@@ -18,7 +18,7 @@ const renderText = (text: string, className: string, baseWeight = 400) => {
 
 const setupTextHover = (container: HTMLElement | null, type: keyof typeof FONT_WEIGHTS) => {
 
-   if(!container) return;
+   if(!container) return () => {};
 
    const letters = container.querySelectorAll("span");
    const { min, max, default: base} = FONT_WEIGHTS[type];
@@ -64,8 +64,8 @@ const Welcome = () => {
    const subtitleRef = useRef<HTMLParagraphElement>(null);
 
    useEffect(() => {
-      const titleCleanup = setupTextHover(titleRef.current, "title")!;
-      const subtitleCleanup = setupTextHover(subtitleRef.current, "subtitle")!;
+      const titleCleanup = setupTextHover(titleRef.current, "title");
+      const subtitleCleanup = setupTextHover(subtitleRef.current, "subtitle");
 
       return () => {
          titleCleanup();
