@@ -1,19 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
-import { dirname, resolve } from 'path'
-import { fileURLToPath } from 'url'
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
-  resolve: {
-    alias: {
-      "#components": resolve(dirname(fileURLToPath(import.meta.url)), 'components'),
-      "#constants": resolve(dirname(fileURLToPath(import.meta.url)), 'constants'),
-      "#store": resolve(dirname(fileURLToPath(import.meta.url)), 'store'),
-      "#hoc": resolve(dirname(fileURLToPath(import.meta.url)), 'hoc'),
-      "#windows": resolve(dirname(fileURLToPath(import.meta.url)), 'windows'),
-    }
-  }
+  plugins: [react(), tailwindcss(), tsconfigPaths()],
+  
 })
