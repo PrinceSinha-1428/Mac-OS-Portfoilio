@@ -1,3 +1,5 @@
+import { Maximize2, Minus, X } from "lucide-react";
+
 const navLinks = [
   {
     id: 1,
@@ -99,6 +101,12 @@ const blogPosts = [
   },
 ];
 
+ const windowControls = [
+    {name: "Exit", icon: X, color: '#FF0000' },
+    {name: "Minimize", icon: Minus, color: '#FFBF00' },
+    {name: "Adjust", icon: Maximize2, color: '#00C907' },
+   ];
+
 const techStack = [
   {
     category: "Frontend",
@@ -110,11 +118,11 @@ const techStack = [
   },
   {
     category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    items: ["Tailwind CSS", "CSS"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Node.js", "Express"],
   },
   {
     category: "Database",
@@ -213,6 +221,7 @@ export {
   socials,
   photosLinks,
   gallery,
+  windowControls
 };
 
 const WORK_LOCATION = {
@@ -501,11 +510,14 @@ const WINDOW_CONFIG = {
   terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-};
+  trash: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+} as const;
 
 export const FONT_WEIGHTS = {
   subtitle: { min: 100, max: 400, default: 100 },
   title: { min: 400, max: 900, default: 400 }
 };
+
+
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };
