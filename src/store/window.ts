@@ -2,7 +2,7 @@ import { INITIAL_Z_INDEX, WINDOW_CONFIG } from "@constants";
 import { create } from "zustand";
 import { immer } from "zustand/middleware/immer";
 
-export type WindowKey = keyof typeof WINDOW_CONFIG;
+export type WindowKey = keyof typeof WINDOW_CONFIG | string;
 
 type WindowItem = {
   isOpen: boolean;

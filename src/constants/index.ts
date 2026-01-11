@@ -1,4 +1,4 @@
-import { Maximize2, Minus, X } from "lucide-react";
+import type { LocationNode } from "@types";
 
 const navLinks = [
   {
@@ -83,56 +83,61 @@ const blogPosts = [
     title:
       "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
     image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+    link: "#",
   },
   {
     id: 2,
     date: "Aug 28, 2025",
     title: "The Ultimate Guide to Mastering Three.js for 3D Development",
     image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+    link: "#",
   },
   {
     id: 3,
     date: "Aug 15, 2025",
     title: "The Ultimate Guide to Mastering GSAP Animations",
     image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+    link: "#",
   },
 ];
 
- const windowControls = [
-    {name: "Exit", icon: X, color: '#FF0000' },
-    {name: "Minimize", icon: Minus, color: '#FFBF00' },
-    {name: "Adjust", icon: Maximize2, color: '#00C907' },
-   ];
 
 const techStack = [
   {
+    category: "Programming",
+    items: ["JavaScript", "TypeScript", "C++", "Java"],
+  },
+  {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
-  },
-  {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
-  },
-  {
-    category: "Styling",
-    items: ["Tailwind CSS", "CSS"],
+    items: [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+    ],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express"],
+    items: [
+      "Node.js",
+      "Express.js",
+      "RESTful APIs",
+    ],
   },
   {
-    category: "Database",
+    category: "Databases",
     items: ["MongoDB", "PostgreSQL"],
   },
   {
-    category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
-  },
+    category: "Tools",
+    items: [
+      "VS Code",
+      "Postman",
+      "GitHub",
+      "Docker",
+    ],
+  }
 ];
+
 
 const socials = [
   {
@@ -221,7 +226,6 @@ export {
   socials,
   photosLinks,
   gallery,
-  windowControls
 };
 
 const WORK_LOCATION = {
@@ -234,7 +238,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "CodeFlex",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -242,21 +246,21 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "Codeflex.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            "The AI Personal Trainer is a smart fitness platform designed to help you achieve your health goals with personalized guidance.",
+            "Instead of generic workout routines, it analyzes your body goals, fitness level, and lifestyle to create customized gym and diet plans.",
+            "Think of it like having a personal trainer and nutrition coach available 24/7—right on your phone or laptop.",
+            "It&apos;s built with Next.js and Tailwind, delivering fast performance, responsive design, and a clean, motivating user experience."
           ],
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "codeflex.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
@@ -265,7 +269,7 @@ const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "nike.png",
+          name: "codeflex.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -492,7 +496,7 @@ const TRASH_LOCATION = {
   ],
 };
 
-export const locations = {
+export const locations= {
   work: WORK_LOCATION,
   about: ABOUT_LOCATION,
   resume: RESUME_LOCATION,

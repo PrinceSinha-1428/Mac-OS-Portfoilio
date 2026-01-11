@@ -7,7 +7,7 @@
 ![GSAP](https://img.shields.io/badge/GSAP-88CE02?logo=greensock&logoColor=white&style=flat-square)
 ![Zustand](https://img.shields.io/badge/Zustand-000000?style=flat-square)
 
-> A modern **macOS-style interactive portfolio** with draggable windows, dock animations, and the classic "genie minimize" effect.
+> A modern **macOS-style interactive portfolio** with draggable windows, dock animations effect.
 
 ---
 
