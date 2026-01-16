@@ -30,3 +30,10 @@ export type TreeNode = FileNode | FolderNode;
 export interface LocationNode extends FolderNode {
   type: string;          
 }
+
+interface TextFileData {
+  name: string;
+  image?: string;
+  subtitle?: string;
+  description?: string[];
+}
