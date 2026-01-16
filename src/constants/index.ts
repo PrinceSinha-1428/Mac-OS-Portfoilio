@@ -1,4 +1,3 @@
-import type { LocationNode } from "@types";
 
 const navLinks = [
   {
@@ -255,7 +254,7 @@ const WORK_LOCATION = {
             "The AI Personal Trainer is a smart fitness platform designed to help you achieve your health goals with personalized guidance.",
             "Instead of generic workout routines, it analyzes your body goals, fitness level, and lifestyle to create customized gym and diet plans.",
             "Think of it like having a personal trainer and nutrition coach available 24/7—right on your phone or laptop.",
-            "It&apos;s built with Next.js and Tailwind, delivering fast performance, responsive design, and a clean, motivating user experience."
+            "It's built with Next.js and Tailwind, delivering fast performance, responsive design, and a clean, motivating user experience."
           ],
         },
         {
@@ -264,7 +263,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://code-flex-alpha.vercel.app/",
           position: "top-10 right-20",
         },
         {
@@ -274,16 +273,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-1.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
+          imageUrl: "/images/codeflex.png",
         },
       ],
     },
@@ -410,7 +400,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
+      imageUrl: "/images/prince.jpg",
     },
     {
       id: 2,
@@ -419,16 +409,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
-    },
-    {
-      id: 3,
-      name: "conference-me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "/images/prince2.jpg",
     },
     {
       id: 4,
@@ -438,12 +419,11 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
+      image: "/images/prince.jpg",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
+        "Hey! I’m Prince 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
         "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
         "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
       ],
     },
   ],
