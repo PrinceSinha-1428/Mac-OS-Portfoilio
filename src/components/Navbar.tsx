@@ -1,7 +1,6 @@
 import { navIcons, navLinks } from "@constants";
 import useWindowStore from "@store/window";
 import dayjs from "dayjs";
-import { Github, GithubIcon } from "lucide-react";
 
 const Navbar = () => {
    const openWindow = useWindowStore(state => state.openWindow);

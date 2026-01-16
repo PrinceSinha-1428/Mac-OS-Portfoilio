@@ -144,28 +144,14 @@ const socials = [
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
-  },
-  {
-    id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
-  },
-  {
-    id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
+    link: "https://github.com/PrinceSinha-1428",
   },
   {
     id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    link: "https://www.linkedin.com/in/prince-kumar-sinha-0006a6293/",
   },
 ];
 
@@ -200,15 +186,15 @@ const photosLinks = [
 const gallery = [
   {
     id: 1,
-    img: "/images/gal1.png",
+    img: "/images/project-2.png",
   },
   {
     id: 2,
-    img: "/images/gal2.png",
+    img: "/images/codeflex.png",
   },
   {
     id: 3,
-    img: "/images/gal3.png",
+    img: "/images/project-3.png",
   },
   {
     id: 4,
@@ -281,7 +267,7 @@ const WORK_LOCATION = {
     // ▶ Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "Quick AI Tools",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -289,30 +275,30 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "Quick AI Tools.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+            "Quick AI is an all-in-one, AI-powered SaaS platform built to empower individuals, creatives, job seekers, and businesses.",
+            "Instead of juggling multiple tools, users can access a suite of intelligent AI utilities in one unified platform.",
+            "Think of it as a smart productivity assistant that automates tasks, simplifies workflows, and saves hours of manual effort.",
+            "It’s designed with a clean, scalable architecture to deliver fast, reliable, and user-friendly AI-powered experiences."
           ],
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "quick-ai-tools.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+          href: "https://github.com/PrinceSinha-1428/Quick-AI-Tools",
           position: "top-20 left-20",
         },
         {
           id: 4,
-          name: "ai-resume-analyzer.png",
+          name: "quick-ai-tools.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
